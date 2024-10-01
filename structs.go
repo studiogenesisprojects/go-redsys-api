@@ -16,6 +16,9 @@ type MerchantParametersResponse struct {
 	TransactionType   string `json:"Ds_TransactionType"`
 	ConsumerLanguage  string `json:"Ds_ConsumerLanguage,omitempty"`
 	AuthorisationCode string `json:"Ds_AuthorisationCode,omitempty"`
+	Identifier        string `json:"Ds_Merchant_Identifier,omitempty"`
+	CofTxnid          string `json:"Ds_Merchant_Cof_Txnid,omitempty"`
+	ExpiryDate        string `json:"Ds_ExpiryDate,omitempty"`
 }
 
 // MerchantParametersRequest struct to construct Redsys API requests
@@ -34,4 +37,7 @@ type MerchantParametersRequest struct {
 	MerchantUrlKO              string `json:"Ds_Merchant_UrlKO,omitempty"`
 	MerchantMerchantName       string `json:"Ds_Merchant_MerchantName,omitempty"`
 	MerchantConsumerLanguage   string `json:"Ds_Merchant_ConsumerLanguage,omitempty"`
+	MerchantIdentifier         string `json:"Ds_Merchant_Identifier,omitempty"`
+	MerchantCofIni             string `json:"Ds_Merchant_Cof_Ini,omitempty"`
+	MerchantCofType            string `json:"Ds_Merchant_Cof_Type,omitempty"`
 }
