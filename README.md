@@ -8,7 +8,7 @@ Redsys api implementation with new the key-hashed message autentication code (HM
 
 	go get github.com/GerardSoleCa/go-redsys-api
 
-## Tests
+## Tests 2
 	
 	go test
 	
