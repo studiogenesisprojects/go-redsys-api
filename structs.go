@@ -19,6 +19,7 @@ type MerchantParametersResponse struct {
 	Identifier        string `json:"Ds_Merchant_Identifier,omitempty"`
 	CofTxnid          string `json:"Ds_Merchant_Cof_Txnid,omitempty"`
 	ExpiryDate        string `json:"Ds_ExpiryDate,omitempty"`
+	Description       string `json:"Ds_Response_Description,omitempty"`
 }
 
 // MerchantParametersRequest struct to construct Redsys API requests
@@ -40,4 +41,14 @@ type MerchantParametersRequest struct {
 	MerchantIdentifier         string `json:"Ds_Merchant_Identifier,omitempty"`
 	MerchantCofIni             string `json:"Ds_Merchant_Cof_Ini,omitempty"`
 	MerchantCofType            string `json:"Ds_Merchant_Cof_Type,omitempty"`
+	MerchantData               string `json:"Ds_Merchant_MerchantData,omitempty"`
+	MerchantCofTxnid           string `json:"Ds_Merchant_Cof_Txnid,omitempty"`
+	MerchantExcepSca           string `json:"Ds_Merchant_Excep_SCA,omitempty"`
+	MerchantDirectPayment      string `json:"Ds_Merchant_DirectPayment,omitempty"`
+}
+
+type RequestPreauthorization struct {
+	Ds_MerchantParameters string `json:"Ds_MerchantParameters"`
+	Ds_SignatureVersion   string `json:"Ds_SignatureVersion"`
+	Ds_Signature          string `json:"Ds_Signature"`
 }
