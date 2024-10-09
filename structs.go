@@ -52,3 +52,8 @@ type RequestPreauthorization struct {
 	Ds_SignatureVersion   string `json:"Ds_SignatureVersion"`
 	Ds_Signature          string `json:"Ds_Signature"`
 }
+
+type RequestErrorMessage struct {
+	ErrorCode        string `json:"errorCode"`
+	ErrorDescription string `json:"errorDescription"`
+}
