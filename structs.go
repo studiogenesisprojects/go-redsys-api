@@ -55,5 +55,5 @@ type RequestPreauthorization struct {
 
 type RequestErrorMessage struct {
 	ErrorCode        string `json:"errorCode"`
-	ErrorDescription string `json:"errorDescription"`
+	ErrorDescription string `json:"errorCodeDescription"`
 }
