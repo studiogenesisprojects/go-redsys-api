@@ -20,6 +20,8 @@ type MerchantParametersResponse struct {
 	CofTxnid          string `json:"Ds_Merchant_Cof_Txnid,omitempty"`
 	ExpiryDate        string `json:"Ds_ExpiryDate,omitempty"`
 	Description       string `json:"Ds_Response_Description,omitempty"`
+	CardNumber        string `json:"Ds_Card_Number,omitempty"`
+	CardBrand         string `json:"Ds_Card_Brand,omitempty"`
 }
 
 // MerchantParametersRequest struct to construct Redsys API requests
