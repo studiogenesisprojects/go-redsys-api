@@ -47,6 +47,7 @@ type MerchantParametersRequest struct {
 	MerchantCofTxnid           string `json:"Ds_Merchant_Cof_Txnid,omitempty"`
 	MerchantExcepSca           string `json:"Ds_Merchant_Excep_SCA,omitempty"`
 	MerchantDirectPayment      string `json:"Ds_Merchant_DirectPayment,omitempty"`
+	MerchantGroup              string `json:"Ds_Merchant_MerchantGroup,omitempty"`
 }
 
 type RequestPreauthorization struct {
